@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body, html {
+    line-height: 1.6;
+    height: 100%;
+}
+
+h2, h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+header {
+    background: #0d68af;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.banner {
+    width: 80%;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin: 0.5rem; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px; 
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.contact-item {
+    margin: 5px;
+    padding: 10px;
+    width: 100%; 
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item i {
+    color: #e74c3c;
+    font-size: 1.5rem;
+    margin-right: 10px; 
+}
+
+.contact-item p, .contact-item a {
+    color: #333;
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.contact-item a {
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+i {
+    color: #e74c3c;
+    font-size: 20px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px; 
+}
+
+.gps, .contact-info {
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.information img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+@media (min-width: 768px) {
+    .information {
+        flex-direction: row;
+        height: 70%;
+    }
+
+    .gps, .contact-info {
+        width: 50%;
+        height: 100%;
+    }
+}
