@@ -113,6 +113,20 @@ nav ul li a:hover {
         width: 49%;
         height: 400px;
     }
+
+    .indice {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .photo {
+        height: 400px;
+    }
+
+    .indice {
+        max-width: 90%;
+    }
 }
 
 .photo {
@@ -172,7 +186,6 @@ footer {
     border-radius: 8px;
     padding: 20px;
     background-color: #f8f8f8;
-    max-width: 800px;
     margin: 10px auto 0;
 }
 
